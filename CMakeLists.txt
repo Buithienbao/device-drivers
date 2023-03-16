@@ -16,12 +16,13 @@ else()
     message(FATAL_ERROR "Unsupported architecture : ${CMAKE_SYSTEM_PROCESSOR}")
 endif()
 
+message(STATUS_)
 file(GLOB _libFiles
      "${CMAKE_SOURCE_DIR}/src/Lib/${_folder}/*.a"
 )
 
 install(FILES ${_libFiles}
-        DESTINATION ${CMAKE_INSTALL_LIBDIR})
+        LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
 
 install(DIRECTORY ${CMAKE_SOURCE_DIR}/src/Include/
         DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/${PROJECT_NAME})
