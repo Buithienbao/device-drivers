@@ -16,7 +16,6 @@ else()
     message(FATAL_ERROR "Unsupported architecture : ${CMAKE_SYSTEM_PROCESSOR}")
 endif()
 
-message(STATUS_)
 file(GLOB _libFiles
      "${CMAKE_SOURCE_DIR}/src/Lib/${_folder}/*.a"
 )
