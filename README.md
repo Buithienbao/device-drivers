@@ -1,5 +1,6 @@
-# Device drivers repository
+# Magewell
 
 ## Overview
+This repo contains the Magewell SDK, required by any application that interacts with Magewell capture cards. 
 
-This repository is meant to hold the different device drivers used across different projects of SURGAR.
+
