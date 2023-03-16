@@ -20,6 +20,8 @@ file(GLOB _libFiles
      "${CMAKE_SOURCE_DIR}/src/Lib/${_folder}/*.a"
 )
 
+include(GNUInstallDirs)
+
 install(FILES ${_libFiles}
         DESTINATION ${CMAKE_INSTALL_LIBDIR})
 
